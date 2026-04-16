@@ -1,0 +1,82 @@
+.loading { display: flex; align-items: center; justify-content: center; min-height: 100vh; font-size: 1rem; color: #888; }
+
+/* AUTH */
+.authWrap { display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 1rem; }
+.authCard { background: #fff; border-radius: 16px; padding: 2.5rem; width: 100%; max-width: 380px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); }
+.authTitle { font-size: 1.4rem; font-weight: 700; text-align: center; margin-bottom: 0.25rem; }
+.authSub { font-size: 0.85rem; color: #888; text-align: center; margin-bottom: 1.5rem; }
+.authError { background: #fff0f0; color: #d32f2f; padding: 0.6rem 0.9rem; border-radius: 8px; font-size: 0.83rem; margin-bottom: 1rem; }
+.formLabel { display: block; font-size: 0.8rem; font-weight: 600; color: #555; margin-bottom: 0.3rem; margin-top: 0.85rem; }
+.formInput { width: 100%; padding: 0.65rem 0.9rem; border: 1.5px solid #e0e0e0; border-radius: 8px; font-size: 0.95rem; outline: none; transition: border-color 0.2s; }
+.formInput:focus { border-color: #4a6cf7; }
+.btnPrimary { display: block; width: 100%; padding: 0.75rem; background: #4a6cf7; color: #fff; border: none; border-radius: 8px; font-size: 0.95rem; font-weight: 600; cursor: pointer; margin-top: 1.25rem; transition: background 0.2s; }
+.btnPrimary:hover { background: #3a5ce6; }
+.btnPrimary:disabled { opacity: 0.6; }
+.authSwitch { text-align: center; margin-top: 1rem; font-size: 0.85rem; color: #888; }
+.authSwitch span { color: #4a6cf7; cursor: pointer; font-weight: 600; }
+
+/* APP */
+.app { display: flex; flex-direction: column; min-height: 100vh; }
+.header { background: #fff; padding: 0.85rem 1.25rem; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #ebebeb; position: sticky; top: 0; z-index: 100; }
+.headerTitle { font-size: 1.05rem; font-weight: 700; }
+.headerRight { display: flex; align-items: center; gap: 0.75rem; }
+.userName { font-size: 0.8rem; color: #666; }
+.btnLogout { padding: 0.35rem 0.85rem; background: transparent; border: 1.5px solid #e0e0e0; border-radius: 6px; font-size: 0.8rem; cursor: pointer; color: #555; transition: all 0.2s; }
+.btnLogout:hover { border-color: #d32f2f; color: #d32f2f; }
+
+/* STATS */
+.statsBar { background: #fff; padding: 0.75rem 1.25rem; display: flex; gap: 1rem; border-bottom: 1px solid #ebebeb; overflow-x: auto; }
+.statItem { display: flex; flex-direction: column; align-items: center; min-width: 80px; }
+.statLabel { font-size: 0.68rem; color: #888; margin-bottom: 0.2rem; white-space: nowrap; }
+.statValue { font-size: 1.1rem; font-weight: 700; }
+.statBar { height: 4px; background: #eee; border-radius: 2px; width: 80px; margin-top: 0.25rem; overflow: hidden; }
+.statBarFill { height: 100%; border-radius: 2px; transition: width 0.4s; }
+
+/* TIMER */
+.timerSection { background: #fff; margin: 0.75rem 0.75rem 0; border-radius: 12px; padding: 0.9rem 1.1rem; border: 1px solid #ebebeb; }
+.timerRow { display: flex; align-items: center; gap: 0.65rem; flex-wrap: wrap; }
+.timerLabel { font-size: 0.8rem; font-weight: 600; color: #555; }
+.timerDisplay { font-size: 1.3rem; font-weight: 700; font-variant-numeric: tabular-nums; min-width: 90px; }
+.btnSm { padding: 0.3rem 0.75rem; border-radius: 6px; border: 1.5px solid #e0e0e0; background: #fff; font-size: 0.78rem; cursor: pointer; font-weight: 600; color: #555; transition: all 0.2s; }
+.btnSm:hover { border-color: #4a6cf7; color: #4a6cf7; }
+.btnSmActive { background: #4a6cf7; border-color: #4a6cf7; color: #fff; }
+.btnSmActive:hover { background: #3a5ce6; color: #fff; }
+.timeInput { width: 55px; padding: 0.3rem 0.5rem; border: 1.5px solid #e0e0e0; border-radius: 6px; font-size: 0.85rem; text-align: center; outline: none; }
+
+/* MATRIX */
+.matrix { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; padding: 0.75rem; }
+.quadrant { background: #fff; border-radius: 12px; padding: 0.85rem; border: 1.5px solid #e0e0e0; min-height: 200px; display: flex; flex-direction: column; }
+.quadrantFull { grid-column: 1 / -1; min-height: 160px; }
+.qHeader { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 0.65rem; }
+.qBadge { display: inline-block; padding: 0.25rem 0.7rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; }
+.qDesc { font-size: 0.68rem; color: #999; margin-top: 0.2rem; }
+.qProgress { font-size: 0.7rem; color: #aaa; white-space: nowrap; }
+.taskList { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 0.6rem; flex: 1; }
+.taskListRow { flex-direction: row; flex-wrap: wrap; }
+.taskItem { display: flex; align-items: center; gap: 0.5rem; padding: 0.45rem 0.6rem; background: #fafaf9; border-radius: 8px; border: 1px solid #f0ede8; }
+.taskListRow .taskItem { width: calc(50% - 0.2rem); }
+.taskDone { opacity: 0.5; }
+.taskCheck { width: 17px; height: 17px; min-width: 17px; border-radius: 50%; border: 2px solid #d1d5db; background: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s; position: relative; }
+.taskChecked { background: #4a6cf7; border-color: #4a6cf7; }
+.taskChecked::after { content: ''; display: block; width: 4px; height: 7px; border-right: 2px solid #fff; border-bottom: 2px solid #fff; transform: rotate(40deg) translateY(-1px); position: absolute; }
+.taskText { font-size: 0.82rem; color: #333; flex: 1; word-break: break-all; }
+.taskTextDone { text-decoration: line-through; color: #aaa; }
+.taskDelete { background: none; border: none; color: #ccc; font-size: 1rem; padding: 0 0.2rem; line-height: 1; transition: color 0.15s; }
+.taskDelete:hover { color: #ef4444; }
+.addRow { display: flex; gap: 0.4rem; }
+.addInput { flex: 1; padding: 0.4rem 0.6rem; border: 1.5px solid #e8e5e0; border-radius: 7px; font-size: 0.82rem; outline: none; background: #fafaf9; }
+.addInput:focus { border-color: #4a6cf7; background: #fff; }
+.addBtn { padding: 0.4rem 0.75rem; background: #4a6cf7; color: #fff; border: none; border-radius: 7px; font-size: 0.82rem; font-weight: 600; transition: background 0.2s; }
+.addBtn:hover { background: #3a5ce6; }
+
+/* ALARM */
+.alarmOverlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 999; display: flex; align-items: center; justify-content: center; }
+.alarmModal { background: #fff; border-radius: 16px; padding: 2rem; text-align: center; max-width: 320px; width: 90%; }
+.alarmIcon { font-size: 2.5rem; margin-bottom: 0.75rem; }
+.alarmTitle { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem; }
+.alarmMsg { font-size: 0.9rem; color: #666; margin-bottom: 1.25rem; line-height: 1.6; }
+
+@media (max-width: 480px) {
+  .taskListRow .taskItem { width: 100%; }
+  .timerRow { gap: 0.5rem; }
+}

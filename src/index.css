@@ -1,0 +1,4 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Hiragino Sans', 'Yu Gothic UI', 'Meiryo', sans-serif; background: #f0ede8; min-height: 100vh; color: #1a1a1a; }
+button { cursor: pointer; }
+input, button { font-family: inherit; }
